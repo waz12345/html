@@ -8,12 +8,11 @@
     <style>
         #t {
             position: absolute;
-            bottom: 5%;
+            top: 5%;
             text-align: center;
             color: red;
             font-size: 20px;
-            width: 80%;
-            left: 10%;
+            width: 100%;
             height: 80px;
             line-height: 80px;
             border: 1px solid pink;
@@ -151,14 +150,8 @@
         if (m === '') {
             document.getElementsByTagName("span")[0].style.opacity = 1;
             return false;
-        } else if (m === '0813') {
-            $('form').action = 'h0813.html';
-            return true;
-        } else if (m === '0101') {
-            $('form').action = 'h0101.html';
-            return true;
-        } else if (m === '0227') {
-            $('form').action = 'h0304.html';
+        } if (m === '0227') {
+            $('form').action = 'd.html';
             return true;
         } else {
             document.getElementsByTagName("span")[0].style.opacity = 1;
